@@ -10,11 +10,13 @@ public class CustomerMapper {
 		customerDto.setName(customer.getName());
 		customerDto.setEmail(customer.getEmail());
 		customerDto.setMobileNumber(customer.getMobileNumber());
+		System.out.println("customerDto/"+customerDto);
 		return customerDto;
 	}
 
 	public static Customer mapToCustomer(CustomerDto customerDto, Customer customer) {
 		customer.setName(customerDto.getName());
+		customer.setEmail(customerDto.getEmail());
 		customer.setMobileNumber(customerDto.getMobileNumber());
 		return customer;
 	}

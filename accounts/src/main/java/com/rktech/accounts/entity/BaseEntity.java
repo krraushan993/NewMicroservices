@@ -12,7 +12,7 @@ import lombok.ToString;
 @Getter @Setter @ToString
 public class BaseEntity {
 
-	@Column(updatable=true)
+	@Column(updatable=false)
 	private LocalDateTime createdAt;
 	
 	@Column(updatable=false)

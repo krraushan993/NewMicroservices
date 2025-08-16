@@ -1,8 +1,8 @@
 package com.rktech.accounts.entity;
 
-import java.time.LocalDateTime;
 
-import org.hibernate.annotations.GenericGenerator;
+
+
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,8 +20,10 @@ import lombok.ToString;
 public class Customer extends BaseEntity{
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO,generator="native")
-	@GenericGenerator(name="native",strategy="native")
+	//@GeneratedValue(strategy=GenerationType.AUTO,generator="native")
+	//@GenericGenerator(name="native",strategy="native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	@Column(name="customer_id")
 	private Long customerId;
 	
@@ -29,6 +31,6 @@ public class Customer extends BaseEntity{
 	
 	private String email;
 	
-	@Column(name="mobile_Number")
+	@Column(name="mobile_number")
 	private String mobileNumber;
 }
