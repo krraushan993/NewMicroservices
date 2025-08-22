@@ -10,5 +10,7 @@ public class AccountsDto {
 	private String accountType;
 	
 	private String branchAddress;
+	
+	private AccountsDto accountsDto;
 
 }

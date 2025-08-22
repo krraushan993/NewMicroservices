@@ -16,19 +16,24 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
-public class Customer extends BaseEntity{
-	
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+public class Customer extends BaseEntity {
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO,generator="native")
-	@GenericGenerator(name="native",strategy="native")
-	@Column(name="customer_id")
+	// @GeneratedValue(strategy=GenerationType.AUTO,generator="native")
+	// @GenericGenerator(name="native",strategy="native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "customer_id")
 	private Long customerId;
-	
+
 	private String name;
-	
+
 	private String email;
-	
-	@Column(name="mobile_Number")
+
+	@Column(name = "mobile_Number")
 	private String mobileNumber;
 }

@@ -15,7 +15,7 @@ import lombok.ToString;
 public class Accounts extends BaseEntity{
 
 	@Column(name="customer_id")
-	private Long customer_id;
+	private Long customerId;
 	
 	@Column(name="account_number")
 	@Id
