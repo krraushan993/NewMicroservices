@@ -1,0 +1,10 @@
+com.rktech.accounts
+com.rktech.accounts.constants
+com.rktech.accounts.controller
+com.rktech.accounts.dto
+com.rktech.accounts.entity
+com.rktech.accounts.exception
+com.rktech.accounts.mapper
+com.rktech.accounts.repository
+com.rktech.accounts.service
+com.rktech.accounts.service.impl
